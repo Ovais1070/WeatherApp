@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InvalidCell" rowHeight="283" id="KGk-i7-Jjw" customClass="InvalidCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="283"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="283"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notFound" translatesAutoresizingMaskIntoConstraints="NO" id="cAl-6N-jFL">
+                        <rect key="frame" x="140" y="121.66666666666669" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="F4L-1e-rIM"/>
+                            <constraint firstAttribute="width" constant="40" id="PFB-bP-F7g"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result not Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTF-NP-Cux">
+                        <rect key="frame" x="98" y="166.66666666666666" width="124" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cAl-6N-jFL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="G9L-B4-dKI"/>
+                    <constraint firstItem="pTF-NP-Cux" firstAttribute="top" secondItem="cAl-6N-jFL" secondAttribute="bottom" constant="5" id="Q1E-ld-NEd"/>
+                    <constraint firstItem="pTF-NP-Cux" firstAttribute="centerX" secondItem="cAl-6N-jFL" secondAttribute="centerX" id="gcK-SZ-TFL"/>
+                    <constraint firstItem="cAl-6N-jFL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qbJ-nG-4F4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="71.755725190839698" y="103.87323943661973"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="notFound" width="512" height="512"/>
+    </resources>
+</document>

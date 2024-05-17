@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchLocationVC" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="lvh-DY-uNc" id="Sou-KP-7CA"/>
+                <outlet property="tableView" destination="Bb7-5o-mKh" id="mOc-fx-Ayr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Search Location" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-DY-uNc">
+                    <rect key="frame" x="16" y="64" width="361" height="56"/>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bb7-5o-mKh">
+                    <rect key="frame" x="0.0" y="150" width="393" height="668"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lvh-DY-uNc" secondAttribute="trailing" constant="16" id="4nk-PL-bOG"/>
+                <constraint firstItem="Bb7-5o-mKh" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Je0-CB-JAx"/>
+                <constraint firstItem="lvh-DY-uNc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="Trp-G5-ANB"/>
+                <constraint firstItem="Bb7-5o-mKh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Urs-lz-b2X"/>
+                <constraint firstItem="Bb7-5o-mKh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kzg-A6-8wd"/>
+                <constraint firstItem="Bb7-5o-mKh" firstAttribute="top" secondItem="lvh-DY-uNc" secondAttribute="bottom" constant="30" id="sb1-w9-Ojd"/>
+                <constraint firstItem="lvh-DY-uNc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="zsj-jX-PsK"/>
+            </constraints>
+            <point key="canvasLocation" x="66" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
