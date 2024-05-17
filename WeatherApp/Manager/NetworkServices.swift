@@ -17,7 +17,7 @@ enum RequestStatus {
 
 
 struct AppData {
-    static var appid: String = "1a492f32561d6b243aeef4b2341c17f6"
+    static var appid: String = "{Your Appid}"
 }
 
 
